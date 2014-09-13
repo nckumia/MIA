@@ -1,4 +1,3 @@
-MIA
-===
 
 Make Information Accesible
+
