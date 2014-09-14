@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="./main.css">
+		
+		<script type="Text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		
+		<script type='text/javascript'>
+			
+			
+			
+				function sizeContent() {
+					
+					
+				
+					var width = $(window).width() / 1440 ;
+					$("#header").css("margin-top", width * 49 );
+					$("#header").css("height", width * 49 );
+					$("#header").css("background-size", width * 16*26.12   );
+					
+					$("#header li").css("margin-top", width * 10 );
+					$("#header li").css("font-size", width * 8 );
+					
+					$("#background").css("top", width * 120 );	
+					$("#background").css("margin-left", width * -7.5 );
+					$("#activities").css("top", width * 224.46);					
+					$("#study").css("top", width * 224.46);	
+					$("#money").css("top", width * 224.46);
+					$("#sociality").css("top", width * 224.46);
+					
+					$("#logo img").css("top", width * 630);
+					$("#logo img").css("width", width * 250);
+					$("#footer").css("margin-top", width * 800);
+					$("input").css("width", width * 120);
+				
+					
+				}
+				
+
+				
+			$(document).ready(function(){										
+				if ($(window).width()>1024){
+					sizeContent();	
+				}
+			});
+			
+			$(window).resize(function() {
+				if ($(window).width()>1024){
+					sizeContent();	
+				}	
+			});
+			
+			</script>
+			
+ 
+		
+	</head>
+ 
+ <body>
+	<div id="wrapper"> 
+		<script language=javascript> 
+			document.documentElement.clientWidth;
+		</script>
+		
+		
+		<div id="header">
+			
+			<!--<img  src= " ./index/13.png"  />-->
+		
+				<li  id= "account"  >帳號 
+				<input  type="text" name="id1"> 
+				</li >
+				<li  id= "password" >
+				密碼 
+				<input  type="password" name="pwd1">
+				</li>
+		
+			
+		
+		</div>
+  
+		<div id="content">
+		
+	
+			
+			<div> <img id="background" src= " ./index/12.png"  /> </div>
+			
+			<a href=""><img id="activities"src= " ./index/2.png"  /> </a>
+			<a href=""><img id="study"src= " ./index/3.png"  /> </a>
+			<a href=""><img id="money"src= " ./index/4.png"  /> </a>
+			<a href=""><img id="sociality"src= " ./index/5.png"  /> </a>
+			
+			<div id="logo">
+				<img  src= " ./index/11.png"  />
+			</div>
+			
+			
+		</div>
+	
+	
+		<div id="footer">
+					
+			<ul>
+				<li id="left1" ><a href="http://web.ncku.edu.tw/bin/home.php">成功大學</a></li>
+				<li id="left2" ><a href="https://myidp.sso2.ncku.edu.tw/nidp/idff/sso?id=8&sid=0&option=credential&sid=0">成功入口</a></li>
+				<li id="about"   ><a href="">關於我們</a></li>			
+			</ul>
+		
+		</div>
+	
+	</div>
+
+ 
+ 
+ </body>
+ 
+ 
+ </html>
